@@ -33,4 +33,4 @@ class first:
         except:
             print('Bandykite iš naujo!')
 fi=first()
-f.get_input()
+fi.get_input()
