@@ -5,7 +5,7 @@ class pirma:
         name = input("Įveskite vardą:")
         lastname = input("Įveskite pavardę:")
         user_age = input("Įveskite amžių:")
-        self.calculate_years(user_age)
+        self.calculate_years(int(user_age))
         self.output_information(name, lastname, user_age)
 
     def output_calculation(self, calculation):
@@ -16,9 +16,9 @@ class pirma:
 
     def calculate_years(self, user_age):
         years_until_100=100-user_age
-        current_date=datetime.datetime.current_date()
+        current_date=datetime.datetime.now()
         current_year=current_date.year
         calculation=current_year+years_until_100
-        self.output(calculation)
+        self.output_calculation(str(calculation))
 p=pirma()
 p.get_input()
