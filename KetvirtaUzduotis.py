@@ -1,11 +1,11 @@
 # Ketvirta uzduotis
-class ketvirta:
+class fourth:
     def get_input(self):
         try:
             name = input("Įveskite ieškomą vardą:")
             self.output_search(name)
         except:
-            print('Bandykite iš naujo')
+            print('Bandykite iš naujo!')
 
     def output_search(self, name):
         try:
@@ -19,7 +19,7 @@ class ketvirta:
             else:
                 print("Profession not found")
         except:
-            print('Bandykite iš naujo')
+            print('Bandykite iš naujo!')
 
-k=ketvirta()
-k.get_input()
+fo=fourth()
+fo.get_input()

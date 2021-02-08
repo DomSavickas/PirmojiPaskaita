@@ -1,6 +1,6 @@
 # Pirma uzduotis
 import datetime
-class pirma:
+class first:
     def get_input(self):
         try:
             name = input("Įveskite vardą:")
@@ -9,19 +9,19 @@ class pirma:
             self.calculate_years(int(user_age))
             self.output_information(name, lastname, user_age)
         except:
-            print('Bandykite iš naujo')
+            print('Bandykite iš naujo!')
 
     def output_calculation(self, calculation):
         try:
             print('Metai bus: '+calculation+', kai jums bus 100 metų')
         except:
-            print('Bandykite iš naujo')
+            print('Bandykite iš naujo!')
 
     def output_information(self, name, lastname, user_age):
         try:
             print('Sveikiname: '+name+' '+lastname+' jums yra: '+user_age)
         except:
-            print('Bandykite iš naujo')
+            print('Bandykite iš naujo!')
 
     def calculate_years(self, user_age):
         try:
@@ -31,6 +31,6 @@ class pirma:
             calculation=current_year+years_until_100
             self.output_calculation(str(calculation))
         except:
-            print('Bandykite iš naujo')
-p=pirma()
-p.get_input()
+            print('Bandykite iš naujo!')
+fi=first()
+f.get_input()

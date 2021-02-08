@@ -1,5 +1,5 @@
 # Trecia uzduotis
-class trecia:
+class third:
     def get_input(self):
         try:
             char_list=[]
@@ -11,7 +11,7 @@ class trecia:
             print('Paskutiniai du simboliai: '+char_list[3]+' '+char_list[4])
             print('Sąrašas nuo galo: '+str(char_list[::-1]))
         except:
-            print('Bandykite iš naujo')
+            print('Bandykite iš naujo!')
 
-t=trecia()
+t=third()
 t.get_input()
